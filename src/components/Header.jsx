@@ -20,9 +20,14 @@ export default function Header() {
         <nav className="bg-white text-neutral-900 shadow-md">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between p-4 items-center">
-              <button onClick={() => router.push("/")} className="flex">
-                <Image src="/images/rf-logo.png" width={50} height={50} alt="rf-logo" />
-              </button>
+              <Link href="/" className="flex items-center gap-2">
+                <Image src="/images/rf-logo.png" width={30} height={30} className="w-8 h-8" alt="rf-logo" />
+                <h1 className="font-bold text-lg flex flex-col">
+                  <span className="">RESURGENCE</span>
+                  <span className="-mt-2">FOUNDATION</span>
+                  
+                </h1>
+              </Link>
               <div className="hidden md:flex space-x-8 md:items-center">
                 <Link href="/">Home</Link>
                 <Link href="/">About us</Link>
